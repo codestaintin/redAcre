@@ -1,0 +1,15 @@
+Title - Test Booking first available flight: One-Way
+
+Precondition: This spec file only tests the flight booking functionality to the point of choosing the first available flight as specified in the task description.
+For clarity, the tests chooses the current date
+
+Test Steps
+- Navigate to https://airmalta.com
+- Choose the One way trip option
+- Choose Vienna Internation Airport as your Departure destination and Malta Airport as your Arrival Destination
+- Select a departure date
+- Click the Find flights button
+- Choose the first available flight
+
+Expected Result
+- A calendar page showing the list of available flights and cost is visible and the first available date is chosen
