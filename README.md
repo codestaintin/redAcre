@@ -1,5 +1,5 @@
 # Running Tests
 - Clone this Repository
 - cd into cloned repository folder
-- Install Dependencies using `npm` or `yarn`
-- Run `./node_modules/.bin/cypress open` to launch tests
+- Install Dependencies using `npm install` or `yarn install`
+- Run `npm test` to launch tests
