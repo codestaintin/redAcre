@@ -13,3 +13,8 @@ Test Steps
 
 Expected Result
 - A calendar page showing the list of available flights and cost is visible and the first available date is chosen
+
+Observation
+- When there are no more flights for a particular day, the page navigates to the calendar page to choose another day with the next available flight
+- When there are flights for a particular day, the Flexible dates link has to be clicked to go the calendar page
+- The after choosing a searching for a flight is quite flaky, while the loader is active, there are page flashes behind the loader hence the large wait times

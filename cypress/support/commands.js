@@ -28,4 +28,8 @@ Cypress.Commands.add('acceptCookie', () => {
     cy.get('button')
         .contains('Accept')
         .click({ force: true });
-})
+});
+
+Cypress.Commands.add('checkElementExists', (selector) => {
+    return cy.window().then($window => $window.document.querySelector(selector));
+});
