@@ -1,3 +1,5 @@
+// TODO: Update Selectors to a more stable one and use interceptors where necessary
+
 describe('template spec', () => {
   beforeEach(() => {
     cy.visit('https://airmalta.com/')
@@ -48,7 +50,7 @@ describe('template spec', () => {
           };
         });
     cy.wait(30000);
-    cy.get('div').contains(/\d{2,}\.\d+/).click();
+    cy.get('div').contains(/\d{2,}\.\d{2}/).click();
 
     cy.get('button').contains('Continue to flights').click();
     cy.url().should('equal', 'https://book.airmalta.com/flights/oneway');
